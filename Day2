@@ -1,0 +1,10 @@
+#2021.3.19 Day2
+Main target today is to understand multidimensional Kalman filter 
+https://habr.com/ru/post/140274/
+F状态之间转换矩阵
+hat{x}_overline{k}当前状态预测值
+hat{x}_k当前状态
+B控制动作的应用的矩阵
+u_k contorl action now
+Q过程噪声协方差
+P_k 误差
