@@ -1,0 +1,12 @@
+#Day5 2021.4.1
+今天与老师交流了关于不知道信号是什么的问题
+老师给出的答复是 可以自己建立信号的模型生成噪声
+今天找到了不错的例子
+https://github.com/csalinasonline/KalmanMatlabCode/blob/master/1.AvgFilter/AvgFilter.m
+学习了：
+persistent 函数运行计数
+randn 生成标准正态分布
+length 求数组长度
+
+平均滤波器
+逐步增大估计值的比值进行迭代
