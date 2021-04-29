@@ -15,7 +15,7 @@ if isempty(firstRun)
 
   x = 10; %x的最开始的估计
   u = 0;%控住输入
-  P =  0.001; %误差方差
+  P =  0.001; %xk的估计与真实值的误差方差
   
   firstRun = 1;  
 end
