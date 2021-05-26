@@ -1,0 +1,13 @@
+#day10 2021.5.26
+Main target today:
+1.read the chapter 13 and think about our research model 部分理解 但不懂正弦波是做什么的
+2.wirte matlab code 没写
+3.think someting about internship detail 多投简历 然后做选择 先行动再考虑，不要纠结
+4.
+
+问题：
+1.为什么角速度不是欧拉角的导数
+
+
+今天读到了125页 关于滚动角误差的积累导致了俯仰角不准备，同时这说明数值整合numerical integration只能得到趋势，并不是很准确
+并且短时间内是准确的
