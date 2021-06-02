@@ -1,0 +1,104 @@
+#15.03.2021 Day 1
+know the Kalman filter function
+函数的作用是使测量值逼近实际值，而不是使数据平滑
+关于函数的求导和代入k值之后的式子未算出
+K值来自于kt的多次迭代的稳定值，也就是说K对于任何一个系统是一个稳定的常数
+我们可以用一个常数来代替用公式求出的系统K值（同样可以得到很好的滤波效果）
+信息来自于https://habr.com/ru/post/166693/
+
+
+#2021.3.19 Day2
+Main target today is to understand multidimensional Kalman filter 
+https://habr.com/ru/post/140274/
+F状态之间转换矩阵
+hat{x}_overline{k}当前状态预测值
+hat{x}_k当前状态
+B控制动作的应用的矩阵
+u_k contorl action now
+Q过程噪声协方差
+P_k 误差
+
+
+#Day3 2021.3.25
+继续阅读 Kalman翻译文件
+对于第5页 1.13 式有疑问 推到不出来
+有一点非常重要，那就是扩展卡尔曼滤波器的一个基本缺陷：离散随机变量的分布（或连续随机变量的密度）在经过非线性系统转化后不再是正态的了。
+看到滤波器计算原理了 第8页
+
+
+#Day4 2021.3.29
+现在面临的问题：
+已经基本搞明白线性卡尔曼滤波器的数学原理，对于非线性卡尔曼滤波器还需要有所研究
+现在是还不知道，需要进行降噪的信号是一个什么样的情况，现在有两种方案：
+1. 选择一个简单的有噪声的信号进行降噪实验
+2. 找老师问清楚具体的信号情况是怎么回事，在哪个环节产生的噪声
+今天的主要任务：
+继续阅读卡尔曼滤波器文献
+并寻找信号降噪的开源项目
+事实上我不是很懂拓展卡尔曼滤波器的计算原理
+
+
+#Day5 2021.4.1
+今天与老师交流了关于不知道信号是什么的问题
+老师给出的答复是 可以自己建立信号的模型生成噪声
+今天找到了不错的例子
+https://github.com/csalinasonline/KalmanMatlabCode/blob/master/1.AvgFilter/AvgFilter.m
+学习了：
+persistent 函数运行计数
+randn 生成标准正态分布
+length 求数组长度
+平均滤波器
+逐步增大估计值的比值进行迭代
+
+
+#day6 2021.4.8
+today we try to get white noise signal via normally distru
+
+
+#day7 2021.4.20
+1.find a more complex example
+2.do simulation
+3.read some paper
+
+
+#day8 2021.4.29
+今天读书“kalman filter for beginners with matlab exmaple”
+拓展卡尔曼例子
+今天的学习总结
+1 今天学习的不是拓展卡尔曼，chap11依然是简单卡尔曼，今天读到第114页
+2 基本熟悉了卡尔曼的应用
+3 发现了书中的一个错误
+4 知道了使用卡尔曼跟踪图像中物体的位置的方法（已经获取图像中物体位置的方法）
+
+
+#2021.5.18 day9 
+今天在实验室询问了实习的事情
+基本确立了在俄罗斯实习
+先找技术岗 再找非技术岗
+目标公司有
+大华
+华为 已经发邮件询问
+小米
+海康威视
+中兴
+联合国
+为了找实习 需要学习
+英语
+C语言
+今天任务
+1.从114页开始
+
+
+#day10 2021.5.26
+Main target today:
+1.read the chapter 13 and think about our research model 部分理解 但不懂正弦波是做什么的
+2.wirte matlab code 没写
+3.think someting about internship detail 多投简历 然后做选择 先行动再考虑，不要纠结
+4.
+问题：
+1.为什么角速度不是欧拉角的导数
+今天读到了125页 关于滚动角误差的积累导致了俯仰角不准备，同时这说明数值整合numerical integration只能得到趋势，并不是很准确
+并且短时间内是准确的
+下次整合实验室日记 整合到一个文件
+
+#day11 2021.6.2
